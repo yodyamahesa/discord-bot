@@ -1,0 +1,8 @@
+discord.py
+python-dotenv
+google-generativeai
+Pillow
+rembg
+Spire.Doc
+plum-dispatch==1.7.4
+duckduckgo_search 
