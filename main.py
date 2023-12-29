@@ -1,21 +1,32 @@
+# Discord App Dependencies
 import discord
-from dotenv import load_dotenv
-import os
+
+# Google AI Studio Dependencies
 import google.generativeai as genai
 
+# System & File Dependencies
+import os
+import glob
+from dotenv import load_dotenv
+
+# Scrapping Dependencies
+import requests
+import urllib.parse
+from urllib.parse import urlparse
+
+# PDF converter Dependencies
 from spire.doc import *
 from spire.doc.common import *
 
-import requests
+# DuckDuckGo Dependencies
+from duckduckgo_search import DDGS
+
+# Image Processing Dependencies
 from PIL import Image
 import PIL.Image
 from io import BytesIO
-import urllib.parse
-from urllib.parse import urlparse
-import glob
 
-from duckduckgo_search import DDGS
-
+# Remove Background Dependencies
 from rembg import remove
 
 # Load environment variables from .env file
@@ -31,7 +42,7 @@ generation_config = {
     "temperature": 0.5,
     "top_p": 1,
     "top_k": 1,
-    "max_output_tokens": 2048,
+    "max_output_tokens": 400,
 }
 
 safety_settings = [
